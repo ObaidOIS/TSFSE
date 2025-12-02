@@ -1,0 +1,82 @@
+# Backend .dockerignore
+# Exclude files not needed in Docker image
+#
+# Author: Obaid
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info
+.eggs
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv
+.venv
+env
+.env
+.env.local
+.env.*.local
+ENV
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings
+
+# Testing
+.pytest_cache
+.coverage
+htmlcov
+.tox
+.nox
+coverage.xml
+*.cover
+*.log
+
+# Django
+*.sqlite3
+db.sqlite3
+staticfiles
+mediafiles
+*.log
+
+# Docker
+Dockerfile*
+docker-compose*
+.docker
+
+# Documentation
+docs
+*.md
+!README.md
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+Makefile
+
+# Miscellaneous
+*.bak
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
